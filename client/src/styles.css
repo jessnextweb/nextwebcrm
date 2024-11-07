@@ -1,0 +1,270 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styles for the project table container */
+  .project-table {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  /* Styles for the search input */
+  .input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue glow effect */
+  }
+  
+  /* Styles for the table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Header styles */
+  thead th {
+    background-color: #8aa9e7; /* Change header background color */
+    color: white; /* Change header text color */
+    padding: 12px;
+  }
+  
+  /* Row styles */
+  tbody tr {
+    transition: background-color 0.3s;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+  }
+  
+  tbody td {
+    border-bottom: 1px solid #ddd; /* Add bottom border to cells */
+    padding: 10px;
+  }
+  
+  /* Pagination styles */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    background-color: #007bff; /* Button color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3; /* Darken button on hover */
+  }
+  
+  .btn:disabled {
+    background-color: #d3d3d3; /* Disabled button color */
+    cursor: not-allowed;
+  }
+  .gantt-chart {
+    margin: 20px;
+  }
+  
+  .gantt-task {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .gantt-task strong {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .reports-page {
+    max-width: 800px; /* Limit width for better readability */
+    margin: 0 auto; /* Center the component */
+    padding: 20px; /* Add padding for spacing */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.form-control {
+    margin-bottom: 16px; /* Space between form controls */
+}
+
+.label {
+    font-weight: bold; /* Bold text for labels */
+    margin-bottom: 8px; /* Space between label and select */
+    display: block; /* Ensure label takes full width */
+}
+
+.select {
+    width: 100%; /* Full width for select elements */
+    padding: 10px; /* Padding for comfort */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 4px; /* Rounded corners */
+    transition: border-color 0.3s; /* Smooth transition on focus */
+}
+
+.select:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.btn {
+    padding: 10px 15px; /* Padding for buttons */
+    border-radius: 4px; /* Rounded corners for buttons */
+    cursor: pointer; /* Change cursor to pointer */
+    border: none; /* Remove default border */
+    color: white; /* Text color for buttons */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Primary button color */
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Secondary button color */
+}
+
+.export-buttons {
+    display: flex; /* Flexbox for button alignment */
+    gap: 10px; /* Space between buttons */
+}
+
+.chart-container {
+    margin-top: 20px; /* Space above chart */
+    border: 1px solid #ccc; /* Border for the chart container */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Padding inside chart container */
+    background-color: white; /* White background for contrast */
+}
+.modal {
+  position: fixed; /* Position modal */
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex; /* Center the modal */
+  justify-content: center; 
+  align-items: center; 
+  z-index: 1000; /* Ensure it is on top */
+}
+
+.modal-box {
+  background-color: white; /* White background for the modal */
+  padding: 20px; /* Padding for content */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  width: 90%; /* Responsive width */
+  max-width: 500px; /* Max width */
+}
+
+.input, .textarea {
+  margin-bottom: 16px; /* Space between inputs */
+  padding: 10px; /* Padding for comfort */
+  border: 1px solid #ccc; /* Border style */
+  border-radius: 4px; /* Rounded corners */
+  width: 100%; /* Full width */
+  transition: border-color 0.3s; /* Smooth transition on focus */
+}
+
+.input:focus, .textarea:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Primary button color */
+  color: white; /* Text color for buttons */
+  padding: 10px 15px; /* Padding for buttons */
+  border-radius: 4px; /* Rounded corners for buttons */
+  border: none; /* Remove default border */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+/* ReminderForm.css */
+.reminder-form {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.reminder-form h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.reminder-form label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.reminder-form input, 
+.reminder-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.reminder-form input:focus, 
+.reminder-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #fff;
+}
+
+.reminder-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.reminder-form button:hover {
+  background-color: #0056b3;
+}
+
+.reminder-form .mb-4 {
+  margin-bottom: 1rem;
+}
